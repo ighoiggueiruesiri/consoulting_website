@@ -1,0 +1,48 @@
+/* Cookie notice: angled top-right corner echoes the contact form card */
+.cookie {
+  --cut: 28px;
+  position: fixed;
+  z-index: 90;
+  left: max(1rem, env(safe-area-inset-left));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  width: min(26rem, calc(100vw - 2rem));
+  padding: 1.5rem 1.5rem 1.4rem;
+  clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
+  box-shadow: 0 0 0 1px var(--line-dark) inset;
+}
+.cookie__title {
+  font-family: var(--f-display);
+  font-weight: 780;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+.cookie__text {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--fg-muted);
+}
+.cookie__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin-top: 1.25rem;
+}
+.cookie__decline {
+  background: none;
+  border: 0;
+  padding: 0.5rem 0;
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--line-dark);
+  transition: text-decoration-color 0.3s;
+}
+.cookie__decline:hover { text-decoration-color: var(--red-hot); }
+
+@media (max-width: 480px) {
+  .cookie { left: 0; bottom: 0; width: 100%; padding-bottom: calc(1.4rem + env(safe-area-inset-bottom)); }
+}

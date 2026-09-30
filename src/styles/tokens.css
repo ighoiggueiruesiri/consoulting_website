@@ -1,0 +1,28 @@
+:root {
+  /* Brand palette, sampled from the company profile and logo */
+  --ink: #202427;
+  --ink-2: #2b3034;
+  --ink-3: #15181a;
+  --red: #c61a20;
+  --red-deep: #9b1116;
+  --red-hot: #ff5a5f;      /* red for small text on charcoal (AA contrast) */
+  --paper: #f7f7f5;
+  --paper-2: #ecece8;
+  --white: #fff;
+  --line: #d9d9d4;
+  --line-dark: rgba(255, 255, 255, 0.16);
+  --muted: #565d63;
+  --muted-dark: #b4bbc0;
+
+  /* Type */
+  --f-display: 'Bricolage Grotesque Variable', 'Arial Narrow', system-ui, sans-serif;
+  --f-body: 'Hanken Grotesk Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Layout */
+  --max: 1360px;
+  --pad: clamp(1.25rem, 4vw, 3rem);
+  --sec: clamp(5rem, 10vw, 9rem);
+  --notch: clamp(32px, 5vw, 72px);
+
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
